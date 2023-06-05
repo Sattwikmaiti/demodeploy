@@ -27,7 +27,7 @@ function App() {
     
   }, []);
 const getLeader = async ()=>{
-  const response =await fetch('http://localhost:3001/todos');
+  const response =await fetch('https://demodeply.onrender.com/todos');
   const data=await response.json();
   setDatabase(data);
   console.log(database)
@@ -35,7 +35,7 @@ const getLeader = async ()=>{
  
 
 const addTodo = async () => {
-  const data = await fetch("http://localhost:3001/todo/new", {
+  const data = await fetch("https://demodeply.onrender.com/todo/new", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

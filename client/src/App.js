@@ -60,7 +60,7 @@ const addTodo = async () => {
 
 <input type="text" placeholder ="author" value={newAuthor}  onChange={(e)=>setNewAuthor(e.target.value)}/>
 <input type="text" placeholder ="text"  value={newTodo}  onChange={(e)=>setNewTodo(e.target.value)}/>
-<button onClick={addTodo}>Submit</button>
+<button onClick={addTodo}>Submits</button>
    
   {
     database.length>0 ? 
